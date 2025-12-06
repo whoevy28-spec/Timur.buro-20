@@ -1,0 +1,46 @@
+.main {
+    background-color: rgb(92, 181, 211);
+    height: 700px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 50px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.header {
+    background-color: purple;
+    height: 100px;
+    width: 85%;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+}
+.album_btn {
+    background-color: orange;
+    height: 50%;
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid black;
+}
+.main_btn {
+    background-color: yellow;
+    height: 50%;
+    width: 100px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    border: 2px solid black;
+}
+.text {
+    margin: 100px;
+}
+.image {
+    margin-top: 200px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 50px;
+}
