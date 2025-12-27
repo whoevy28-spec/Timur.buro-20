@@ -1,0 +1,60 @@
+body {
+    background-color: #0f1f40;
+}
+.content_main {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 2px solid #AEB2F2;
+    position: relative;
+}
+.sun {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 25px;
+    position: absolute;
+}
+.stars {
+    background-image: url(stars.png);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.clouds {
+    background-image: url(clouds.png);
+    width: 200px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+.content_main:hover {
+    background-color: #62d0df;
+}
+.content_main:hover .sun {
+    background-color: #ffeb0a;
+}
+.content_main:hover .stars {
+    display: none;
+}
+.content_main:hover .clouds {
+    display: block;
+}
+.background-two {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #541f03;
+    background-image: url(cat.jpg);
+    background-size: cover;
+}
+.background-two:active {
+    background-image: url(cat_2.jpg);
+}
