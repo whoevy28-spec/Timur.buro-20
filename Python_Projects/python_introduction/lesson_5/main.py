@@ -25,13 +25,12 @@ for attemp in range(10):
 
     if player == comp:
         print("Ничья!")
-        print(f"Мои победы: {count}")
     elif player == 1 and comp == 2 or \
         player == 2 and comp == 3 or \
         player == 3 and comp == 1:
-        count =+ 1
+        count += 1
         print("Вы выиграли")
-        print(f"Мои победы: {count}")
     else:
         print("Компьютер выиграл")
-        print(f"Мои победы: {count}")
+    
+    print(f"Мои победы: {count}")
