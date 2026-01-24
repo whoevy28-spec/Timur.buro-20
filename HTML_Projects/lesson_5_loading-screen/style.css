@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    color: #fff;
+    background-color: #222;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+.content {
+    width: 800px;
+}
+
+.loading__bar {
+    border-radius: 10px;
+    width: 0px;
+    height: 50px;
+    background-color: #F498AD;
+    display: none;
+}
+
+.content:hover .loading__bar {
+    display: block;
+    animation: color-change 10s 1 alternate linear forwards, loading 10s 1 forwards 0.1s ;
+}
+
+@keyframes loading {
+    from {
+        width: 20px;
+    }
+    to {
+        width: 500px;
+    }
+}
+
+@keyframes color-change {
+    from {
+        background-color: #F498AD;
+    }
+    50% {
+        background-color: #7F6EDB;
+    }
+    to {
+        background-color: #2E9AFF;
+    }
+}
+@keyframes flash_dots {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.flashing__dots {
+    position: absolute;
+    overflow: hidden;
+    animation: flash_dots 2s infinite normal running cubic-bezier(0.895, 0.03, 0.685, 0.22) both;
+}
