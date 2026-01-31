@@ -19,7 +19,29 @@
 # for word in words:
 #     print(word.strip(".,").lower())
 
-a = 2
-for i in range(10):
-    a *= 2
-    print(a)
+# a = 2
+# for i in range(10):
+#     a *= 2
+#     print(a)
+
+# fruits = ["orange", "apple", "pineapple"]
+# print("orange" in fruits)
+# print("garlic" in fruits)
+
+# letter = "banana"
+# print(letter)
+# fruit = "apple"
+# for letter in fruits:
+#     print(letter)
+#     print(letter * 2)
+# print("Цикл закончился")
+
+# если в слове есть "и" заменяем на знак процента, если есть "ё" заменяем на #, иначе выводим саму букву
+word = "иваси"
+for letter in word:
+    if letter == "и":
+        print("%", end="")
+    elif letter == "ё":
+        print("#", end="")
+    else:
+        print(letter, end="")
