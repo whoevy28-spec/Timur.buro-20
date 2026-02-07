@@ -1,0 +1,33 @@
+body {
+    background-color: #5175AD;
+}
+.main_header {
+    height: 100%;
+    width: 80%;
+    background-color: #39547f;
+    display: flex;
+    padding: 20px;
+    font-family: PT Sans, sans-serif;
+    margin: auto;
+    color: #DAEAFF;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: #DAEAFF;
+}
+h1 {
+    margin-left: 20px;
+    margin: 0;
+}
+.menu {
+    padding: auto;
+    margin: 0;
+    font-size: 24px;
+}
+.main_content {
+    margin: auto;
+    background-color: #466494;
+    height: 1500px;
+    width: 80%;
+}
