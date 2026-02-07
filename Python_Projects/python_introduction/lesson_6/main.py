@@ -9,18 +9,17 @@ print("\033[2J")
 
 while not win:
     letter = input(f"\nИгрок {counter + 1}, ведите букву:")
-        
-    if letter not in all_letters:
-        all_letters.append(letter)
-    else:
-        print("Вы уже вводили эту букву")
 
-    if letter not in secret_word:
-        print("Такой буквы нету в слове")
+    if letter in all_letters:
+        print("Буква уже была введена")
     else:
-        print("Вы угадали букву")
-        true_letters.append(letter)
-        points[counter] += 1
+        all_letters.append(letter)    
+        if letter not in secret_word:
+            print("Такой буквы нету в слове")
+        else:
+            print("Вы угадали букву")
+            true_letters.append(letter)
+            points[counter] += 1
 
     win = True
     for letter in secret_word:
