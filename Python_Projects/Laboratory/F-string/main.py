@@ -37,11 +37,17 @@
 # print("Цикл закончился")
 
 # если в слове есть "и" заменяем на знак процента, если есть "ё" заменяем на #, иначе выводим саму букву
-word = "иваси"
-for letter in word:
-    if letter == "и":
-        print("%", end="")
-    elif letter == "ё":
-        print("#", end="")
-    else:
-        print(letter, end="")
+# word = "иваси"
+# for letter in word:
+#     if letter == "и":
+#         print("%", end="")
+#     elif letter == "ё":
+#         print("#", end="")
+#     else:
+#         print(letter, end="")
+count = 0
+for i in range(10):
+    print("-" * 30)
+    for i in range(10):
+        count += 1
+        print(count)
