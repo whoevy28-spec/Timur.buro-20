@@ -45,9 +45,22 @@
 #         print("#", end="")
 #     else:
 #         print(letter, end="")
-count = 0
-for i in range(10):
-    print("-" * 30)
-    for i in range(10):
-        count += 1
-        print(count)
+
+# count = 0
+# for i in range(10):
+#     print("-" * 30)
+#     for i in range(10):
+#         count += 1
+#         print(count)
+
+pupils = ["Катя", "Вася", "Маша"]
+grades = [5, 5, 3]
+
+for pupil in pupils:
+    print(pupil)
+
+for num in range(len(grades)):
+    print(grades[num])
+
+for num, pupil in enumerate(pupils):
+    print(pupil, grades[num])

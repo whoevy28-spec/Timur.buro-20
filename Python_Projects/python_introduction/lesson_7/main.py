@@ -71,8 +71,8 @@ print(f"""{name}, мы начинаем игру!
 После 7 вопроса он увеличится до 700000.
 Если же ты ответишь на все вопросы правильно, ты получишь 1000000!!! Желаю удачи!""")
 
-for num in range(10):
-    your_answers.append(int((input(questions[num]))))
+for question in questions:
+    your_answers.append(int((input(question))))
 
 for num in range(10):
     if your_answers[num] == true_answers[num]:
