@@ -26,8 +26,17 @@ h1 {
     font-size: 24px;
 }
 .main_content {
-    margin: auto;
+    margin: 0 auto;
     background-color: #466494;
     height: 1500px;
-    width: 80%;
+    width: 78%;
+    padding: 20px;
+}
+.main_content > h2 {
+    font-family: PT Sans, sans-serif;
+    color: #DAEAFF;
+    margin-top: 0px;
+}
+.main_information {
+    display: flex;
 }
