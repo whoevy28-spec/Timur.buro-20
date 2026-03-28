@@ -1,5 +1,6 @@
 body {
     background-color: #5175AD;
+    color: #DAEAFF;
 }
 .main_header {
     height: 100%;
@@ -9,12 +10,11 @@ body {
     padding: 20px;
     font-family: PT Sans, sans-serif;
     margin: auto;
-    color: #DAEAFF;
     justify-content: space-between;
 }
 a {
     text-decoration: none;
-    color: #DAEAFF;
+    color: inherit;
 }
 h1 {
     margin-left: 20px;
@@ -34,9 +34,38 @@ h1 {
 }
 .main_content > h2 {
     font-family: PT Sans, sans-serif;
-    color: #DAEAFF;
     margin-top: 0px;
+    margin-bottom: 30px;
 }
 .main_information {
     display: flex;
+    font-size: 20px;
+}
+.main_information > div > p {
+    margin: 10px 20px;
+}
+.main_information > img {
+    margin: 20px
+}
+.main_information > p {
+    text-align: center;
+}
+.table {
+    margin: auto;
+    background-color: #5175AD;
+    width: 80%;
+    height: 45%;
+    border: #2e4468 2px solid;
+}
+td {
+    border: #2e4468 2px solid;
+}
+th:nth-child(2) {
+    width: 60%;
+}
+th:nth-child(3) {
+    width: 1%
+}
+th {
+    border: #425066 1px solid;
 }

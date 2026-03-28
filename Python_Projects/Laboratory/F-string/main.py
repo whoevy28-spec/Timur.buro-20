@@ -53,14 +53,55 @@
 #         count += 1
 #         print(count)
 
-pupils = ["Катя", "Вася", "Маша"]
-grades = [5, 5, 3]
+# pupils = ["Катя", "Вася", "Маша"]
+# grades = [5, 5, 3]
 
-for pupil in pupils:
-    print(pupil)
+# for pupil in pupils:
+#     print(pupil)
 
-for num in range(len(grades)):
-    print(grades[num])
+# for num in range(len(grades)):
+#     print(grades[num])
 
-for num, pupil in enumerate(pupils):
-    print(pupil, grades[num])
+# for num, pupil in enumerate(pupils):
+#     print(pupil, grades[num])
+
+double = ""
+for symbol in "Привет":
+    double += symbol * 2
+    double = double + symbol * 2
+print(double)
+
+double = [symbol * 2 for symbol in "Привет"]
+print(double)
+
+double = "".join([symbol * 2 for symbol in "Привет"])
+print(double)
+
+
+squares_1 = []
+for x in range(10):
+    squares_1.append(x ** 3)
+print(squares_1)
+
+squares_2 = "".join([str(x ** 3) for x in range(10)])
+print(squares_2)
+
+
+odds_1 = []
+for x in range(10):
+    if x % 2 !=0:
+        odds_1.append(x)
+print(odds_1)
+
+odds_2 = [x for x in range(10) if x % 2 != 0]
+print(odds_2)
+
+
+signal = False
+if signal:
+    color = "green"
+else:
+    color = "red"
+
+color = "green" if signal else "red"
+print(color)
