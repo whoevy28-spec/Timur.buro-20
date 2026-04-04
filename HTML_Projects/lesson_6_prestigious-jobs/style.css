@@ -28,7 +28,7 @@ h1 {
 .main_content {
     margin: 0 auto;
     background-color: #466494;
-    height: 1500px;
+    height: auto;
     width: 78%;
     padding: 20px;
 }
