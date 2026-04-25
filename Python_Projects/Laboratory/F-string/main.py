@@ -65,43 +65,76 @@
 # for num, pupil in enumerate(pupils):
 #     print(pupil, grades[num])
 
-double = ""
-for symbol in "Привет":
-    double += symbol * 2
-    double = double + symbol * 2
-print(double)
+# double = ""
+# for symbol in "Привет":
+#     double += symbol * 2
+#     double = double + symbol * 2
+# print(double)
 
-double = [symbol * 2 for symbol in "Привет"]
-print(double)
+# double = [symbol * 2 for symbol in "Привет"]
+# print(double)
 
-double = "".join([symbol * 2 for symbol in "Привет"])
-print(double)
-
-
-squares_1 = []
-for x in range(10):
-    squares_1.append(x ** 3)
-print(squares_1)
-
-squares_2 = "".join([str(x ** 3) for x in range(10)])
-print(squares_2)
+# double = "".join([symbol * 2 for symbol in "Привет"])
+# print(double)
 
 
-odds_1 = []
-for x in range(10):
-    if x % 2 !=0:
-        odds_1.append(x)
-print(odds_1)
+# squares_1 = []
+# for x in range(10):
+#     squares_1.append(x ** 3)
+# print(squares_1)
 
-odds_2 = [x for x in range(10) if x % 2 != 0]
-print(odds_2)
+# squares_2 = "".join([str(x ** 3) for x in range(10)])
+# print(squares_2)
 
 
-signal = False
-if signal:
-    color = "green"
-else:
-    color = "red"
+# odds_1 = []
+# for x in range(10):
+#     if x % 2 !=0:
+#         odds_1.append(x)
+# print(odds_1)
 
-color = "green" if signal else "red"
-print(color)
+# odds_2 = [x for x in range(10) if x % 2 != 0]
+# print(odds_2)
+
+
+# signal = False
+# if signal:
+#     color = "green"
+# else:
+#     color = "red"
+
+# color = "green" if signal else "red"
+# print(color)
+
+
+# for i in range(5, 10):
+#     # print(type(i))
+#     print(i)
+#     for j in range(5, 10):
+#         print(j)
+#         print(f"{i + 1} * {j + 1} = {(i + 1) * (j + 1)}")
+#     print("\n")
+
+# symbol = "0"
+# if symbol == "0" or symbol == "x":
+#     print("Эта строка всегда сработает, потому-что True внутри if")
+# print(bool(-1))
+# print(1 != 0)
+
+
+school_class = (("Маша", "Алёна", "Вася"),)
+name_1, name_2, name_3 = school_class[0]
+print(name_2)
+for one, two, three in school_class:
+    print(one, two, three)
+print(school_class[0])
+
+def func(one, two, three):
+    print(one, two, three)
+func(*school_class[0])
+
+x = {
+    "sep": "+",
+    "end": "/n/n"
+}
+print(*school_class, **x)
