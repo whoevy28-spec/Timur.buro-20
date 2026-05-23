@@ -122,19 +122,23 @@
 # print(1 != 0)
 
 
-school_class = (("Маша", "Алёна", "Вася"),)
-name_1, name_2, name_3 = school_class[0]
-print(name_2)
-for one, two, three in school_class:
-    print(one, two, three)
-print(school_class[0])
+# school_class = (("Маша", "Алёна", "Вася"),)
+# name_1, name_2, name_3 = school_class[0]
+# print(name_2)
+# for one, two, three in school_class:
+#     print(one, two, three)
+# print(school_class[0])
 
-def func(one, two, three):
-    print(one, two, three)
-func(*school_class[0])
+# def func(one, two, three):
+#     print(one, two, three)
+# func(*school_class[0])
 
-x = {
-    "sep": "+",
-    "end": "/n/n"
-}
-print(*school_class, **x)
+# x = {
+#     "sep": "+",
+#     "end": "/n/n"
+# }
+# print(*school_class, **x)
+
+
+x = list(range(1, 10))
+print(x)
