@@ -26,3 +26,10 @@ a:hover {
 .desk {
     margin: 10px;
 }
+.video_row {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
