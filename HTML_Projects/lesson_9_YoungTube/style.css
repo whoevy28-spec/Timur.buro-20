@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(19, 19, 19);
+    
+}
+a {
+    background-color: rgb(165, 6, 6);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    display: flex;
+}
+a:hover {
+    color: black;
+}
+.info_video {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 1px;
+    width: 560px;
+    background-color: #333333;
+    color: white;
+}
+.desk {
+    margin: 10px;
+}
